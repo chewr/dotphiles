@@ -11,3 +11,4 @@
 # Customize to your needs...
 
 alias ll='ls -alh'
+alias dsl='~/.dotfiles/dotsync/bin/dotsync -L'
