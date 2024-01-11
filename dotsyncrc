@@ -8,7 +8,7 @@
 #
 
 # Location of your dotfiles in $HOME
-# DOTFILES=.dotfiles
+DOTFILES=.dotfiles
 
 # dotfiles to symlink
 #
@@ -24,7 +24,7 @@ dotsyncrc
 #ctags/ctags
 #cmus
 #curl/curlrc
-#git/gitconfig
+git/gitconfig
 #git/gitignore
 #git/gitattributes
 #git/tigrc
@@ -71,7 +71,7 @@ dotsyncrc
 #zsh/dotzsh:.zsh
 #zsh/zlogin
 #zsh/zlogout
-#zsh/zprofile
+zsh/zprofile
 #zsh/zshenv
 #zsh/zshrc
 [endfiles]
@@ -87,6 +87,6 @@ dotsyncrc
 #host6.example.net               rsync=host1.example.com                                #rsync mirror, push from host1
 #host7.example.net               rsync=host2.example.com                                #rsync mirror, push from host2
 #host8.example.net               rsync=host2.example.com                                #rsync mirror, push from host2
-#host9.example.net               rsync=host2.example.com                                #rsync mirror, push from host2
+rchew4-mac                       git=ANY                                                # work macbook pro
 [endhosts]
 

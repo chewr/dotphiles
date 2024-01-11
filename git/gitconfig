@@ -9,13 +9,19 @@
 
 # Global Config
 [user]
-    #name = "**Your Name**"
-    #email = "**Your Email**"
-    #signingkey = **Your GPG ID**
+    name = "chewr"
+    email = "5873755+chewr@users.noreply.github.com"
+    signingkey = ~/.ssh/com.github.ed25519.pub
 
 [branch "master"]
     remote = origin
     merge = refs/heads/master
+[branch "develop"]
+    remote = origin
+    merge = refs/heads/develop
+[branch "main"]
+    remote = origin
+    merge = refs/heads/main
 
 [color]
     branch = always
@@ -63,12 +69,10 @@
 
 [alias]
     # branch
-    b  = branch
+    br  = branch
     bc = checkout -b
     bl = branch -v
     bL = branch -av
-    bx = branch -d
-    bX = branch -D
     bm = branch -m
     bM = branch -M
     bs = show-branch
@@ -84,7 +88,6 @@
     fo  = fetch origin
     # merge
     m   = merge
-    mom = merge origin/master
     # push
     p   = push
     pa  = push --all
@@ -95,9 +98,9 @@
     rc  = rebase --continue
     ri  = rebase --interactive
     rs  = rebase --skip
-    rom = rebase origin/master
 
     # commit
+    ci     = commit
     c      = commit -v
     ca     = commit --all -v
     cm     = commit --message
@@ -115,7 +118,7 @@
     hubd = compare
 
     # index
-    s  = status
+    st  = status
     a  = add
     ia = add
     ir = reset
@@ -146,3 +149,5 @@
 [url "git@github.com:"]
     insteadof = github:
 
+[gpg]
+	format = ssh
