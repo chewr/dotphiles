@@ -112,3 +112,9 @@ source "$DOTZSH/init.zsh"
 
 ### Customize to your needs...
 
+# Enable git tab completion
+autoload -Uz compinit && compinit
+
+# Helpful aliases
+alias ll='ls -alh'
+alias dsl='~/.dotfiles/dotsync/bin/dotsync -L'
