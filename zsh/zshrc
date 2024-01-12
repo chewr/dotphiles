@@ -115,7 +115,16 @@ source "$DOTZSH/init.zsh"
 ## Use vim keybindings in terminal
 set -o vi
 
-# Enable git tab completion
+# With additional bindings that are missing by default
+bindkey -v '^?' backward-delete-char
+my-backward-delete-word() {
+    local WORDCHARS=${WORDCHARS/\//}
+    zle backward-delete-word
+}
+zle -N my-backward-delete-word
+bindkey '^W' my-backward-delete-word
+
+## Enable git tab completion
 autoload -Uz compinit && compinit
 
 # Helpful aliases

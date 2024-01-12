@@ -25,6 +25,7 @@ dotsyncrc
 #cmus
 #curl/curlrc
 git/gitconfig
+git/gitconfig-personal
 #git/gitignore
 #git/gitattributes
 #git/tigrc
@@ -67,12 +68,12 @@ git/gitconfig
 #vim/vimrc
 #vim/gvimrc
 #wget/wgetrc
-#zsh/fasdrc
-#zsh/dotzsh:.zsh
-#zsh/zlogin
-#zsh/zlogout
-#zsh/zprofile
-#zsh/zshenv
+zsh/fasdrc
+zsh/dotzsh:.zsh
+zsh/zlogin
+zsh/zlogout
+zsh/zprofile
+zsh/zshenv
 zsh/zshrc
 private
 [endfiles]

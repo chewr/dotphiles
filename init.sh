@@ -5,7 +5,7 @@ DOTFILES_TARGET="~/.dotfiles"
 # Set up symlink
 REPO_DIR="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 
-if test -f ${DOTFILES_TARGET}; then
+if test ${DOTFILES_TARGET}; then
     echo "${DOTFILES_TARGET} exists."
 else
     echo "Linking ~/.dotfiles to ${REPO_DIR}"
@@ -13,7 +13,14 @@ else
 fi
 
 # Set up private directory
-mkdir -p ${REPO_DIR}/private
+PRIVATE_DIR="${REPO_DIR}/private"
+mkdir -p ${PRIVATE_DIR}
+
+GITCONFIG_WORK="${PRIVATE_DIR}/gitconfig-work"
+if ! test -f ${GITCONFIG_WORK}; then
+    cp templates/gitconfig-work ${GITCONFIG_WORK}
+    vim ${GITCONFIG_WORK}
+fi
 
 # Run dotsync for the first time
 ${DOTFILES_TARGET}/dotsync/bin/dotsync -L

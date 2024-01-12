@@ -8,9 +8,9 @@
 #
 
 # Global Config
-[user]
-    name = "chewr"
-    email = "5873755+chewr@users.noreply.github.com"
+
+[include]
+	path = ~/.gitconfig-personal
 
 [branch "master"]
     remote = origin
@@ -142,6 +142,9 @@
     rex = remote rm
     rem = remote rename
 
+    setwork = config --global include.path ~/.private/gitconfig-work
+    setpersonal = config --global include.path ~/.gitconfig-personal
+
 [push]
     default = matching
 
@@ -149,4 +152,4 @@
     insteadof = github:
 
 [gpg]
-	format = ssh
+    format = ssh
