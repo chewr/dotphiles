@@ -10,7 +10,7 @@
 # Global Config
 
 [include]
-	path = ~/.gitconfig-personal
+	path = ~/.private/gitconfig-work
 
 [branch "master"]
     remote = origin
