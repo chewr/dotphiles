@@ -112,9 +112,25 @@ source "$DOTZSH/init.zsh"
 
 ### Customize to your needs...
 
+## Use vim keybindings in terminal
+set -o vi
+
 # Enable git tab completion
 autoload -Uz compinit && compinit
 
 # Helpful aliases
-alias ll='ls -alh'
+alias ll='ls -Gflash'
 alias dsl='~/.dotfiles/dotsync/bin/dotsync -L'
+alias grep="grep --color=auto"
+alias egrep="egrep --color=auto"
+alias fgrep="fgrep --color=auto"
+alias vi="vim"
+
+# Python development
+cleanpy() {
+    if git diff HEAD --name-only | grep -q .*.py$; then
+        for cmd in 'isort' 'black' 'flake8 --ignore E501'; do 
+            pipenv run ${cmd} $(git diff HEAD --name-only | grep .*.py$)
+        done
+    fi
+}

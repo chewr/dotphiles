@@ -11,3 +11,9 @@ else
     echo "Linking ~/.dotfiles to ${REPO_DIR}"
     ln -s ${REPO_DIR} ~/.dotfiles
 fi
+
+# Set up private directory
+mkdir -p ${REPO_DIR}/private
+
+# Run dotsync for the first time
+${DOTFILES_TARGET}/dotsync/bin/dotsync -L

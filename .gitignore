@@ -37,5 +37,6 @@ mutt/cache/*
 mutt/mailboxes.*
 mutt/smime/*
 mutt/certificates
+private/*
 task/task/*.data
 
