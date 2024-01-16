@@ -166,3 +166,5 @@ gclone() {
     cd ${target}
 }
 
+# Hook for work setup
+source ~/.private/zshrc-work

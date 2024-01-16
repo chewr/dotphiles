@@ -1,0 +1,8 @@
+# Work zshrc content here...
+
+# Private environment variables
+export WORK_GHE_DOMAIN="** Enterprise Github Domain **"
+export GHE_PATH="${GIT_VOLUME}/${WORK_GHE_DOMAIN}"
+
+
+
