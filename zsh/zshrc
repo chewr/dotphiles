@@ -168,3 +168,6 @@ gclone() {
 
 # Hook for work setup
 source ~/.private/zshrc-work
+
+# Created by `pipx` on 2024-01-16 17:29:03
+export PATH="$PATH:~/.local/bin"
