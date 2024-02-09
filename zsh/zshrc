@@ -144,6 +144,12 @@ alias fgrep="fgrep --color=auto"
 alias vi="vim"
 
 # Python development
+## Pyenv setup
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+## Useful macros
 cleanpy() {
     if git diff HEAD --name-only | grep -q .*.py$; then
         for cmd in 'isort' 'black' 'flake8 --ignore E501'; do 

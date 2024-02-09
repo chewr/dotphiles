@@ -26,6 +26,9 @@
 
 " Customize to your needs...
 
+" Line numbers on
+set number
+
 " for iterm2 color
 set term=xterm-256color
 
@@ -40,4 +43,3 @@ autocmd FileType go setlocal tabstop=4 noexpandtab
 
 " Avoid E363
 set mmp=5000
-
