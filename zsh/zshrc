@@ -176,4 +176,4 @@ gclone() {
 source ~/.private/zshrc-work
 
 # Created by `pipx`
-export PATH="$PATH:/Users/rchew/.local/bin"
+export PATH="$PATH:~/.local/bin"
