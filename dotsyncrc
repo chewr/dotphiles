@@ -90,5 +90,6 @@ private
 #host7.example.net               rsync=host2.example.com                                #rsync mirror, push from host2
 #host8.example.net               rsync=host2.example.com                                #rsync mirror, push from host2
 rchew4-mac                       git=ANY                                                # work macbook pro
+black-box			 git=ANY						# home desktop
 [endhosts]
 
