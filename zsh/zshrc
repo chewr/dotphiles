@@ -177,3 +177,4 @@ source ~/.private/zshrc-work
 
 # Created by `pipx`
 export PATH="$PATH:~/.local/bin"
+export JAVA_HOME="$(/usr/libexec/java_home)"
