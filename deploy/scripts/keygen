@@ -1,0 +1,16 @@
+#!/bin/bash
+set -o pipefail
+
+SSH_DIR="${HOME}/.ssh"
+ED25519_KEY="${SSH_DIR}/id_ed25519.git"
+PUB_KEY="${ED25519_KEY}.pub"
+
+if test -f "${ED25519_KEY}" || test -f "${PUB_KEY}"; then
+    echo "SSH keys present on machine already"
+else
+    echo "Will regenerate SSH keys"
+    ssh-keygen -t ed25519 -C "$(git config user.email)" -f "${ED25519_KEY}"
+    eval "$(ssh-agent -s)"
+    ssh-add "${ED25519_KEY}"
+fi
+

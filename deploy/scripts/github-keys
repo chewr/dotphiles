@@ -1,0 +1,12 @@
+#!/bin/bash
+
+PUB_KEY="${HOME}/.ssh/id_ed25519.git.pub"
+
+if test ! -f "${PUB_KEY}"; then
+    echo "No key found, run keygen"
+fi
+
+
+echo "Navigate to https://github.com/settings/ssh/new"
+python3 -m webbrowser "https://github.com/settings/ssh/new"
+cat ${PUB_KEY}

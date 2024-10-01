@@ -1,0 +1,6 @@
+- The work/personal toggle in git config should not be in committed code. The default in committed code should be personal
+- There are a number of setup steps which should be performed on new machines
+  There may be OSS tooling for automating this
+	- Set up SSH keys + prompt user to upload to github
+	- populate `deploy/packages` with useful packages to install via package managers
+- Wildcard for hosts in dotsyncrc would be nice so we don't have to manually enter that each time
