@@ -36,3 +36,17 @@
 #xz
 #zsh
 
+bash-completion
+coreutils
+curl
+gcc
+git
+jq
+pipx
+pyenv
+tmux
+wget
+yq
+rectangle
+
+# TODO: it would be cool to flag on/off various packages depending on whether the machine is work/personal/etc.
