@@ -17,6 +17,10 @@ HashKnownHosts no
 #Host hostname hostname.fqdn.com
 #    Hostname hostname.fqdn.com
 
+Host github.com
+    User git
+    IdentityFile ~/.ssh/id_ed25519.git
+
 # Default
 Host *
     #User username

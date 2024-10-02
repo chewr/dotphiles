@@ -58,7 +58,7 @@ git/gitconfig-personal
 #screen/screenrc
 #shell/hushlogin
 #shell/urlview
-#ssh
+ssh/config:.ssh/config
 #subversion
 #task/task
 #task/taskrc
