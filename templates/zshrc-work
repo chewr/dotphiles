@@ -4,5 +4,6 @@
 export WORK_GHE_DOMAIN="** Enterprise Github Domain **"
 export GHE_PATH="${GIT_VOLUME}/${WORK_GHE_DOMAIN}"
 
-
+# Java is a work-only kind of thing in my life right now
+export JAVA_HOME="$(/usr/libexec/java_home)"
 

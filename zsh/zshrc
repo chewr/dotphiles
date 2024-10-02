@@ -181,7 +181,6 @@ fi
 
 # Created by `pipx`
 export PATH="$PATH:~/.local/bin"
-export JAVA_HOME="$(/usr/libexec/java_home)"
 
 # Necessary for faster tabcompletion on WSL
 # May be unnecessary in other environments
