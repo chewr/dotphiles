@@ -186,3 +186,8 @@ export PATH="$PATH:~/.local/bin"
 # May be unnecessary in other environments
 # Have not confirmed if this is detrimental in any environments
 unsetopt pathdirs
+
+# Start ssh-agent on login (if not already started)
+if [ -z "${SSH_AUTH_SOCK}" ]; then
+    eval `ssh-agent -s`
+fi
